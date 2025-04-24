@@ -2,7 +2,9 @@
 <html lang="en-us">
   <head>
   
-  <!-- PWA Manifest -->
+  
+  
+<!-- PWA Manifest -->
   <link rel="manifest" href="manifest.json">
 
   
@@ -11,6 +13,8 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <link rel="icon-192x192.png" href="icon-192x192.png">
 <meta name="Blocks" content="Blocks">
+
+
 
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -37,7 +41,7 @@
     <script>
 	
 	
-     if ('serviceWorker' in navigator) {
+    if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/sw.js')
     .then(reg => console.log("Service Worker registered!", reg))
     .catch(err => console.error("Service Worker error:", err));
@@ -77,9 +81,9 @@
       var loaderUrl = buildUrl + "/Blocks.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/Blocks.data.br",
-        frameworkUrl: buildUrl + "/Blocks.framework.js.br",
-        codeUrl: buildUrl + "/Blocks.wasm.br",
+        dataUrl: buildUrl + "/Blocks.data",
+        frameworkUrl: buildUrl + "/Blocks.framework.js",
+        codeUrl: buildUrl + "/Blocks.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "testing",
